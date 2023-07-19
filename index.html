@@ -1,13 +1,38 @@
-<!DOCTYPE html>
+
 <html>
 <head>
+<style>
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700);
+body {
+background-color: rgb(25,30,50);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: normal;
+    height: 100%;
+}
+h1{
+    color: white;
+}
+iframe{
+    margin-bottom: 50px;
+}
+
+</style>
 </head>
-
-
 <body>
-    <div>
-      <iframe src="http://192.168.0.16:8000/index.html" style="height: 480px; width: 640px;"></iframe>
-    </div>
+<table>
+    <tr>
+        <td>
+            <h1>Canl&#305; Tarlan&#305;z: </h1>
+            <img src="stream.mjpg" width="640" height="480">
+        </td>
+        
+        <td>
+            <iframe width="450" height="260" style="border: 2px solid #cccccc; margin-left: 40px;" src="https://thingspeak.com/channels/2212892/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+            <iframe width="450" height="260" style="border: 2px solid #cccccc; margin-left: 40px;" src="https://thingspeak.com/channels/2212892/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
 
+        </td>    
+    
+    </tr>
+</table>
 </body>
 </html>
